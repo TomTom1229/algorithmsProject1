@@ -12,7 +12,7 @@ def palindrominate(inString, offset, seenIndices):
 		return ""
 
 	longest = ""
-	for i in range(0,len(inString)-1):
+	for i in range(0,len(inString)):
 		curLetter = inString[i]
 		farthestIndex = inString.rindex(curLetter);
 		index = str(i+offset)+str(farthestIndex+offset)
